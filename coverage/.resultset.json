@@ -1,0 +1,45 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Home/Desktop/rails/favorite_eats/app/models/user.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Home/Desktop/rails/favorite_eats/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Home/Desktop/rails/favorite_eats/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Home/Desktop/rails/favorite_eats/app/controllers/favorites_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Home/Desktop/rails/favorite_eats/app/controllers/pages_controller.rb": [
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1375810054
+  }
+}

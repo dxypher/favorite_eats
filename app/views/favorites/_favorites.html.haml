@@ -1,0 +1,13 @@
+.update-container
+  - @favorites.each do |favorite|
+    .accordian#new_favorite
+      .accordian-group
+        .accordian-heading
+          %a.accordian-toggle.btn{href: "##{dom_id(favorite)}", :'data-toggle' => "collapse", :'data-parent' => 'new_favorite'}= "#{favorite.name} - #{favorite.category}"
+        .accordian-body.collapse{id: dom_id(favorite)}
+          .accordian-inner
+            %img(src="http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{favorite.latitude}%2C#{favorite.longitude}")
+            %p= "Address: #{favorite.address}"
+            %p= "Phone Number: #{favorite.phone_number}"
+            = link_to "Edit this favorite", edit_favorite_path(favorite)
+            = link_to "Delete favorite", favorite_path(favorite), method: 'delete', data: { confirm: "Are you sure?" }, id: "delete_link"

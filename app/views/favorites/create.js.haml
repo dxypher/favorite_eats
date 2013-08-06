@@ -1,0 +1,6 @@
+$('#favorite_name').val('')
+$('#favorite_category').val('')
+$('#favorite_address').val('')
+$('#favorite_phone_number').val('')
+$('.add_favorite').click()
+$('.update-container').html("#{escape_javascript(render :partial => 'favorites' )}");

@@ -1,0 +1,13 @@
+- if current_user
+  %h1 
+    Favorite Eats for
+    = current_user.email
+  = render 'favorites'
+  .accordian#new_favorite
+    %hr
+    .accordian-group
+      .accordian-heading
+        %a.accordian-toggle.add_favorite.btn{href: '#new', :'data-toggle' => "collapse", :'data-parent' => 'new_favorite'} Add new Favorite
+      .accordian-body.collapse#new
+        .accordian-inner
+          = render 'favorites/form'
